@@ -8,6 +8,11 @@
 
         <!-- CSS -->
         <link href="src/css/bootstrap.min.css" rel="stylesheet">
+        <style type="text/css">
+            #t1 {padding: 2px 4px 4px 4px;}
+            #t2 {padding: 0px 2px 0px 2px;}
+            #t3 {padding: 4px 0px 1px 0px}
+        </style>
     </head>
     <body>
         <div class="container-fluid">
@@ -41,13 +46,111 @@
 
                     </nav>
                     <div class="jumbotron">
-                        <h2>
-                            insert your content here!
+                        <h2 align="center">
+                            Entre em contato
                         </h2>
-                        <p>
-                            Paragrafo paragrafo..............
-                        </p>
-
+                        <form action="/scr/form/dados.txt">
+                            <table align="center" border="0">
+                                <tr>
+                                <td id="t3">
+                                    <label>Nome: </label>
+                                </td>
+                                <td>
+                                    <input type="text">
+                                </td>
+                            </tr>
+                                <tr>
+                                <td id="t3">
+                                    <label>Email: </label>
+                                </td>
+                                <td>
+                                    <input type="email">
+                                </td>
+                            </tr>
+                                <tr>
+                                <td id="t3">
+                                    <label>Motivo do contato: </label>
+                                </td>
+                                <td>
+                                    <input list="idList" name="motivo" value="">
+                                        <datalist id="idList"> 
+                                            <option>Problema com as camisas</option>
+                                            <option>Estampa com defeito</option>
+                                            <option>Pedido especial</option>
+                                            <option>Sugestão</option>
+                                            <option>Outro</option>
+                                        </datalist>
+                                </td>
+                            </tr>
+                                <tr>
+                                    <td id="t3">
+                                        <label>Observações: </label>
+                                    </td>
+                                    <td>
+                                        <textarea rows="5" cols="22">
+                                        
+                                    </textarea>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td id="t3">
+                                        <input type="reset">
+                                    </td>
+                                    <td align="right">
+                                        <input type="submit">
+                                    </td>
+                                </tr>
+                            </table>
+                        </form>
+                    </div>
+                    <div>
+                        <br>   
+                        <table border="0" align="center">
+                        	<tr>
+                                    <td id="t1"> 
+                                        <a href="http://www.facebook.com/estampariasecia" target="_blank">
+                                            <img src="src/images/facebook-icone-icon.png" width="20" height="19"/>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        facebook.com/estampariasecia
+                                    </td>
+                                </tr>
+                                <tr id="t4">
+                                    <td id="t1">
+                                        <a href="http://www.instagram.com/estampariaecia" target="_blank">
+                                            <img src="src/images/instagranicone.jpg" width="20" height="19"/>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        instagram.com/estampariaecia
+                                    </td>
+                              	</tr>
+                                <tr id="t4">
+                                    <td>
+                                        <img src="src/images/whatsapp-logo-1.png" width="25" height="25"/>
+                                    </td>
+                                    <td id="t2">
+                                        (13) 98844-6622
+                                    </td>
+                                </tr>
+                                <tr id="t4">
+                                    <td>
+                                        <img src="src/images/telefoneicone.png" width="25" height="25"/>
+                                    </td>
+                                    <td id="t2">
+                                        (13) 3495-7511
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="src/images/emailicone.png" width="25" height="25"/>
+                                    </td>
+                                    <td id="t2">
+                                        estampariasecia@hotmail.com
+                                    </td>
+                                </tr>
+                        </table>
                     </div>
                 </div>
             </div>
